@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>CodeStart - Developer Diary</title>
+		 
+		<link href="QuizOfficial.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Solway"
+				href="https://fonts.googleapis.com/css?family=Lobster">
+
+<link rel="icon" type="image/ico" size="100x100" href="Photos\Logo.png">
+
+
+
+
+
+
+
+
+					
+			
+</head>
+
+	
+
+	<div class="BackgroundImage">
+	
+	</div>
+
+<div class="logo">	
+	<img src= "Photos\Logo.png" alt="image" height="205" width="250">
+</div>
+
+<div class="Title">
+	<p>CodeStart Beginner Web Development</p>
+	
+
+</div>
+
+
+<div class="Lines">
+	
+</div>
+
+
+	<div class="buttonsnav">
+		
+		<div class="Home">
+			<a href="QuizOfficial.html">   Home </a>
+		</div>	
+		<div class="dropdown">
+			<button>Learning Material</button>
+			<div class="content"> 
+				<a href="Quiz1Intro.html">Multiple Choice</a>
+				<a href="Quiz2Intro.html">True OR False</a>
+					
+			</div>
+		</div>	
+		<div class="Tools">
+			<a href="Tools.html"> Tools </a> 
+		</div>
+		<div class="Diary">
+			<a href="DD.html"> 	Diary </a>
+		</div>
+		
+		
+	</div>
+
+<center>
+		<div class = "row">
+            <div class = "content">
+   
+	
+	
+   
+	
+	
+	
+<body>
+			
+                <h2>Welcome to the Developer Diary</h2>
+              
+<p>On this page you will be shown the methods I, the developer used to create this website that is used for beginner web developers. This website's main focus is about getting the user comfortable and confident with using HTML, CSS & JavaScript.
+
+<br><br>Regarding information or if you want to look further into the methods and step-by-step process I used to develop this site please see below:</p>
+
+<br><br><br>
+
+ 
+ 
+
+	
+	<h2>Main Hero Page</h2> <p>Starting with the HomePage it was a fairly simple use of HTML & CSS as a lot of this code was just code used to modify the layout of the site.
+	However whenever it came to developing the slideshow showing the team that developed this website & monitor it as admins I used a script tag inside the html file to develop a carousel javascript,
+	I learnt this feature outside of university in previous education & decided to implement it here as to give a more professional look for the user. Starting from top to bottom being the navigation bar, I implemented simple modified 
+	hyperlinks & customised them using CSS to match the rest of the pages colour scheme, also in the navigation bar is a dropdown list which links to the overview pages for the learning material required some research
+	but was eventually implemented using a hyperlink once again & then using a hover add-on for the link which allowed more text to be displayed when the main link/text was hovered over. In terms of the footer I simply implemented 
+	images/logos of the social media icons which was simple enough, and then customised them through CSS.</p><br><br>
+
+	
+	
+	
+	<h2>Learning Materials</h2> <p>In terms of the learning materials, I decided to do two quizes which as previously mentioned were accessed via the navigation bar hover button.</p>
+	<h4> Multiple Choice</h4>
+	<p>When starting this quiz, right after the Multiple Choice link is clicked on the dropdown box, the user is taken to a main introduction overview page. This page states all rules and information of the multiple choice quiz. 
+	Starting with the multiple choice quiz. The JavaScript code made a timed multiple-choice quiz with a total of 20 questions, however in the finished version I made it so there is only allowed. 
+	to be 10 asked in total, this was to add a more refreshing experience so if the user repeated it again they would feel as if it is a new test. When focusing on the coding aspect I began by defining an array of questions, 
+	each containing a question, options, and the number declaring which option was infact the correct answer. The getRandomQuestion function selects a random question from the array I created but also without repeating any question. 
+	For each question, I set up a timer of 30 seconds and a countdown display that updates every second to inform the user how long they had left on the question, this allowed the user to know how long they had left. 
+	When doing the test a user selects an answer, the correct answer is highlighted, and their score is updated if the answer is correct, which is all done in the background as I decided not to add an active score counter. 
+	After an answer is selected, the countdown stops briefly, and the next question automatically is displayed after the brief pause. Once all 10 questions are used the final score is displayed with a button below it called finish,
+	the button then redirects the user to the main HomePage again. Additionally, the code also ensures that the timer is reset with each new question and that no question is repeated during the quiz.</p><br>
+	
+	<h4>True OR False</h4>
+	<p>When starting this quiz, right after the True OR False link is clicked on the dropdown box, the user is taken to a main introduction overview page. This page states all rules and information of the multiple choice quiz.
+	When the Start button is clicked the JavaScript code creates a true/false quiz with 10 questions out of the provided 20 in the array which is done exactly the same as the multiple choice quiz, 
+	each containing an image for the user to evaluate. The questions array defines each question, the associated image, and the correct answer being true or false as I decided that it was much easier to just use 2 Strings instead of an index system like I did in the previous quiz. 
+	The getRandomQuestion function selects a random question and ensures no questions are repeated by tracking previously selected questions. The displayQuestion function displays the question, the image, and 
+	two buttons for the user to choose either 'True' or 'False'. When either one of the buttons are clicked, the handleOptionClick function checks if the selected answer is correct and updates the score accordingly. 
+	After answering, the quiz either displays the next question or, if all 10 questions have been asked, the code will show the user's final score and provide a 'Finish' button that takes the user back to the HomePage.
+	The process is done by generating and updating HTML elements and scanning the user input, which obviously effects the output of the JavaScript.</p><br><br><br>
+
+
+
+
+	<h2>Tools Page</h2><p>The tools page was completed very very similarily to the main HomePage, as they both share the exact same HTML & CSS layout the only thing different is the actual content. The content on the tools Page
+	is filled with the 3 software that are recommended by us here at CodeStart, as well as the slideshow being removed to allow for more room, and also because it was not best suited for that page. In terms of CSS, the Tools Page
+	helped me realise the main content area was too bare so I decided to modify the main content using margins and paddings in the CSS, I also applied these changes to the HomePage and some details to the Learning Materials. the original content
+	font on all pages was all white, I tested around with this on the Tools Page and it helped me to realise that white font looked very good on the navy blue that I had in the navigation bar and footer but not the main content area, therefore
+	I decided to try black and it works a lot better alongside the light background colour of the body, as well as the content background.</p><br><br>
+
+</center>
+
+
+
+
+	<footer>
+	<div class=footer>
+	
+	<ul class="social">
+	<ul>Check out our socials!!!</ul>
+	<br>
+		
+	<a href="https://www.facebook.com/">
+	<img src= "Photos\Facebook.png" alt="image" height="32" width="32"></a>
+	
+		
+	<a href="https://www.twitter.com/">
+	<img src= "Photos\Twitter.png" alt="image" height="32" width="32"></a>
+	
+	
+	<a href="https://www.instagram.com/">
+	<img src= "Photos\Instagram.png" alt="image" height="32" width="32"></a>
+	<p>&copy; 2024 Student Bank Details. All rights reserved.</p>
+	</ul>
+		
+	</div>
+	
+	</footer>
+
+
+</body>
+
+
+
+
+</html>
